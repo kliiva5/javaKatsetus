@@ -16,15 +16,8 @@ public class Rakendus {
 		return "See veebirakendus on mõeldud oma ideede testimiseks";
 	}
 	
-	@RequestMapping("/average")
-	int aritmeetiline_keskmine(String arv1, String arv2){
-		double a1 = Double.ParseDouble(arv1);
-		double a2 = Double.ParseDouble(arv2);
-		return String.valueOf((a1*a2)/2);
-	}
- 
     public static void main(String[] args) {
-		System.getProperties().put("server.port", 4231);
+		//System.getProperties().put("server.port", 4231);
         SpringApplication.run(Rakendus.class, args);
     }
 }
